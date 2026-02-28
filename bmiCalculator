@@ -5,7 +5,7 @@ function bmiCalc(
         float $height, 
         string $heightUnit = "m",
     ):float {
-    if ($heightUnit = "ft"){
+    if ($heightUnit == "ft"){
         $height = $height * 0.3048;
     }
     return $bmi = $weight / ($height * $height);
